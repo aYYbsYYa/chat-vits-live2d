@@ -1,2 +1,2 @@
-# chat-vits-live2d
+# Chat-Vits-Live2d
 基于pio框架二开的web看板娘，可以模型进行定制，支持与模型进行对话，并用文字和vits生成相应模型的语音进行回复，是一个很有趣，又与时俱进的live2d
