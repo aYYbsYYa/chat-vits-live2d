@@ -81,21 +81,21 @@ function loadIcons() {
   checkImageLoad(imagePath,
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("./live2d/icon/'+current.idol+'/home.png")';
-      newCloseIconPath = 'url("./live2d/icon/'+current.idol+'/close.png")';
-      newSkinIconPath = 'url("./live2d/icon/'+current.idol+'/skin.png")';
-      newInfoIconPath = 'url("./live2d/icon/'+current.idol+'/info.png")';
-      newNightIconPath = 'url("./live2d/icon/'+current.idol+'/night.png")';
+      newHomeIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/home.png")';
+      newCloseIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/close.png")';
+      newSkinIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/skin.png")';
+      newInfoIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/info.png")';
+      newNightIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/night.png")';
 
       applyIconStyles();
     },
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("./icon/0/home.png")';
-      newCloseIconPath = 'url("./icon/0/close.png")';
-      newSkinIconPath = 'url("./icon/0/skin.png")';
-      newInfoIconPath = 'url("./icon/0/info.png")';
-      newNightIconPath = 'url("./icon/0/night.png")';
+      newHomeIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/home.png")';
+      newCloseIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/close.png")';
+      newSkinIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/skin.png")';
+      newInfoIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/info.png")';
+      newNightIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/night.png")';
 
       applyIconStyles();
     }
@@ -423,7 +423,7 @@ function getChat() {
       
       $.ajax({
         //url: "https://v.api.aa1.cn/api/api-xiaoai/talk.php",      //小爱接口
-        url: "./live2d/liaotian.php",                               //青云课免费接口
+        url: "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/liaotian.php",                               //青云课免费接口
         type: "GET",
         data: {
           msg: msg,
