@@ -78,7 +78,7 @@
     display: none;
     cursor: pointer;
     position: absolute;
-    transition: all .3;
+    transition: all .3s;
     background: url(avatar.png) center/contain;
     opacity: 0.7;
 }
@@ -101,7 +101,7 @@
 }
 
 .pio-container.left {
-	transition: all .3;
+	transition: all .3s;
 	bottom: 0;
     left: 0
 }
