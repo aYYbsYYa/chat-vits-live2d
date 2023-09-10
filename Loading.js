@@ -21,7 +21,7 @@ if(window.innerWidth >= 770){
             head.appendChild(link);
         }
         var cssFiles = [
-            "./live2d/pio.css",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio.css",
         ];
         var cssTags = new Array(cssFiles.length);
         for (var k = 0, len = cssTags.length; k < len; k++) {
@@ -36,14 +36,14 @@ if(window.innerWidth >= 770){
         }
  
         var jsFiles = [
-            "./live2d/jquery364.min.js",
-            "./live2d/TweenLite.js",
-            "./live2d/live2dcubismcore.min.js",
-            "./live2d/pixi.min.js",
-            "./live2d/cubism4.min.js",
-            "./live2d/pio.js",
-            "./live2d/pio_sdk4.js",
-            "./live2d/load.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/jquery364.min.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/TweenLite.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/live2dcubismcore.min.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pixi.min.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/cubism4.min.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio_sdk4.js",
+            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/load.js",
         ];
         var scriptTags = new Array(jsFiles.length);
         for (var i = 0, len = jsFiles.length; i < len; i++) {
