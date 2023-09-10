@@ -32,11 +32,11 @@ const initConfig = {
   },
   night: "toggleNightMode()",
   model: [
-    "./live2d/Modle/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
-    "./live2d/Modle/Xiao/xiao.model3.json",             //B站：动力薄荷
+    "./live2d/Model/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
+    "./live2d/Model/Xiao/xiao.model3.json",             //B站：动力薄荷
     
-    "./live2d/Modle/Diana/Diana.model3.json",
-    "./live2d/Modle/Ava/Ava.model3.json",
+    "./live2d/Model/Diana/Diana.model3.json",
+    "./live2d/Model/Ava/Ava.model3.json",
 	
   ],
   tips: true,
