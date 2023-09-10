@@ -91,11 +91,11 @@ function loadIcons() {
     },
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("./live2d/icon/0/home.png")';
-      newCloseIconPath = 'url("./live2d/icon/0/close.png")';
-      newSkinIconPath = 'url("./live2d/icon/0/skin.png")';
-      newInfoIconPath = 'url("./live2d/icon/0/info.png")';
-      newNightIconPath = 'url("./live2d/icon/0/night.png")';
+      newHomeIconPath = 'url("./icon/0/home.png")';
+      newCloseIconPath = 'url("./icon/0/close.png")';
+      newSkinIconPath = 'url("./icon/0/skin.png")';
+      newInfoIconPath = 'url("./icon/0/info.png")';
+      newNightIconPath = 'url("./icon/0/night.png")';
 
       applyIconStyles();
     }
