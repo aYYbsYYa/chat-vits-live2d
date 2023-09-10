@@ -1,0 +1,236 @@
+
+/* ----
+
+# Last Update: 2021.5.4
+
+本代码为奇趣保罗原创，并遵守 GPL 2.0 开源协议。欢迎访问我的博客：https://paugram.com
+
+本代码为阳阳-aYYbsYYa二开，并遵守 GPL 2.0 开源协议。欢迎访问我的博客：https://ayya.top
+
+# Last Update: 2023.9.10
+
+---- */
+
+.pio-from{
+	position: absolute;
+    bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: .8;
+    text-align: center;
+}
+
+.pio-from .pio-input{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    padding: 5px 10px;
+	padding-right: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+	background: #8a12e5;
+	color:#ffffff
+}
+
+.pio-from .pio-input::placeholder{
+	color:#bdbdbd
+}
+
+.pio-from .pio-input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.pio-from .pio-submit{
+    position: absolute;
+    top: 1px;
+    right: 16px;
+    background: #8a12e5;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+    color: #ffffff;
+    width: 30px;
+    height: 26px;
+    line-height: 29px;
+}
+
+.pio-from .pio-submit:hover{
+	cursor: pointer;
+}
+
+.pio-container {
+    bottom: 0;
+    z-index: 52;
+    color: #666;
+    position: fixed;
+    user-select: none;
+}
+
+.pio-container .pio-show {
+    left: -3em;
+    bottom: -0.2em;
+    width: 6em;
+    height: 6.8em;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    transition: all .3s;
+    background: url(avatar.png) center/contain;
+    opacity: 0.7;
+}
+
+.pio-container.hidden .pio-show {
+    display: block;
+}
+
+.pio-container.hidden .pio-show:hover {
+    opacity: 0.9;
+    transform: translateX(2.5em);
+}
+
+.pio-container.hidden #pio {
+    display: none;
+}
+
+.pio-container.hidden .pio-dialog {
+    display: none;
+}
+
+.pio-container.left {
+	transition: all .3s;
+	bottom: 0;
+    left: 0
+}
+
+.pio-container.right {
+    right: 0
+}
+
+.pio-container.left.hidden{
+	left:10px;
+	bottom: -5px;
+}
+
+.pio-container.active {
+    cursor: move
+}
+
+.pio-container.static {
+    pointer-events: none
+}
+
+.pio-container .pio-action {
+    top: -20px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s;
+}
+
+.pio-container.left .pio-action {
+    right: -35px
+}
+
+.pio-container.right .pio-action {
+    left: 0
+}
+
+.pio-container:hover .pio-action {
+    opacity: 1
+}
+
+.pio-container.left.hidden .pio-action{
+	right: 10px;
+}
+
+.pio-action span {
+    color: #fff;
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0.6em;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: .5em;
+    background-size: 100%;
+}
+
+:root {
+  --home-icon: url("./live2d/icon/0/home.png");
+  --close-icon: url("./live2d/icon/0/close.png");
+  --skin-icon: url("./live2d/icon/0/skin.png");
+  --info-icon: url("./live2d/icon/0/info.png");
+  --night-icon: url("./live2d/icon/0/night.png");
+}
+
+.pio-action .pio-home {
+  background-image: var(--home-icon);
+}
+
+.pio-action .pio-close {
+  background-image: var(--close-icon);
+}
+
+.pio-action .pio-skin {
+  background-image: var(--skin-icon);
+}
+
+.pio-action .pio-info {
+  background-image: var(--info-icon);
+}
+
+.pio-action .pio-night {
+  background-image: var(--night-icon);
+}
+
+.pio-container .pio-dialog {
+    top: -2em;
+    opacity: 0;
+    z-index: -1;
+    font-size: .8em;
+    min-width: 12em;
+    background: #fff;
+    padding: .75em 1em;
+    border-radius: 1em;
+    visibility: hidden;
+    position: absolute;
+    word-break: break-all;
+    border: 1px solid #eee;
+    transition: opacity .3s, visibility .3s;
+}
+
+.pio-container .pio-dialog.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pio-container.left .pio-dialog {
+    left: 1em
+}
+
+.pio-container.right .pio-dialog {
+    right: 1em
+}
+
+#pio {
+    vertical-align: middle
+}
+
+@media screen and (max-width: 768px) {
+    #pio {
+        width: 8em !important;
+    }
+
+    .pio-container {
+        pointer-events: none
+    }
+}
+#pio{
+    width: 16em
+}
+/*.pio-action{*/
+/*    display:none !important;*/
+/*}*/
