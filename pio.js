@@ -61,7 +61,7 @@ function checkImageLoad(imagePath, successCallback, errorCallback) {
 }
 
 // 指定图片路径
-var imagePath = './live2d/icon/'+current.idol+'/home.png';
+var imagePath = 'https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/home.png';
 // 更改图标路径
 let newHomeIconPath;
 let newCloseIconPath;
