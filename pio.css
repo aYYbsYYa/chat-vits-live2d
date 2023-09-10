@@ -78,7 +78,7 @@
     display: none;
     cursor: pointer;
     position: absolute;
-    transition: all .3s;
+    transition: all .3;
     background: url(avatar.png) center/contain;
     opacity: 0.7;
 }
@@ -101,7 +101,7 @@
 }
 
 .pio-container.left {
-	transition: all .3s;
+	transition: all .3;
 	bottom: 0;
     left: 0
 }
@@ -159,11 +159,11 @@
 }
 
 :root {
-  --home-icon: url("./icon/0/home.png");
-  --close-icon: url("./icon/0/close.png");
-  --skin-icon: url("./icon/0/skin.png");
-  --info-icon: url("./icon/0/info.png");
-  --night-icon: url("./icon/0/night.png");
+  --home-icon: url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/home.png");
+  --close-icon: url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/close.png");
+  --skin-icon: url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/skin.png");
+  --info-icon: url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/info.png");
+  --night-icon: url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/night.png");
 }
 
 .pio-action .pio-home {
