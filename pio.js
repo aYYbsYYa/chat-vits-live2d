@@ -423,7 +423,7 @@ function getChat() {
       
       $.ajax({
         //url: "https://v.api.aa1.cn/api/api-xiaoai/talk.php",      //小爱接口
-        url: GitUrl+"/liaotian.php",                               //青云课免费接口
+        url: "./liaotian.php",                               //青云课免费接口
         type: "GET",
         data: {
           msg: msg,
