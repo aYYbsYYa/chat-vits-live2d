@@ -81,11 +81,11 @@ function loadIcons() {
   checkImageLoad(imagePath,
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/home.png")';
-      newCloseIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/close.png")';
-      newSkinIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/skin.png")';
-      newInfoIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/info.png")';
-      newNightIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/night.png")';
+      newHomeIconPath = 'url("'+GitUrl+'/icon/'+current.idol+'/home.png")';
+      newCloseIconPath = 'url("'+GitUrl+'/icon/'+current.idol+'/close.png")';
+      newSkinIconPath = 'url("'+GitUrl+'/icon/'+current.idol+'/skin.png")';
+      newInfoIconPath = 'url("'+GitUrl+'/icon/'+current.idol+'/info.png")';
+      newNightIconPath = 'url("'+GitUrl+'/icon/'+current.idol+'/night.png")';
 
       applyIconStyles();
     },
