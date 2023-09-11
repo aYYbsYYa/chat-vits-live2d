@@ -38,11 +38,11 @@ const initConfig = {
   },
   night: "toggleNightMode()",
   model: [
-    GitUrl+"/Modle/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
-    GitUrl+"/Modle/Xiao/xiao.model3.json",             //B站：动力薄荷
+    GitUrl+"/Model/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
+    GitUrl+"/Model/Xiao/xiao.model3.json",             //B站：动力薄荷
     
-    GitUrl+"/Modle/Diana/Diana.model3.json",
-    GitUrl+"/Modle/Ava/Ava.model3.json",
+    GitUrl+"/Model/Diana/Diana.model3.json",
+    GitUrl+"/Model/Ava/Ava.model3.json",
 	
   ],
   tips: true,
