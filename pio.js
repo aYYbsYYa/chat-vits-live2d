@@ -61,7 +61,7 @@ function checkImageLoad(imagePath, successCallback, errorCallback) {
 }
 
 // 指定图片路径
-var imagePath = 'https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/home.png';
+var imagePath = GitUrl+'/icon/'+current.idol+'/home.png';
 // 更改图标路径
 let newHomeIconPath;
 let newCloseIconPath;
@@ -81,21 +81,21 @@ function loadIcons() {
   checkImageLoad(imagePath,
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/home.png")';
-      newCloseIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/close.png")';
-      newSkinIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/skin.png")';
-      newInfoIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/info.png")';
-      newNightIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/'+current.idol+'/night.png")';
+      newHomeIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/home.png")';
+      newCloseIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/close.png")';
+      newSkinIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/skin.png")';
+      newInfoIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/info.png")';
+      newNightIconPath = 'url("'+GitUrl+'/icon'+current.idol+'/night.png")';
 
       applyIconStyles();
     },
     function() {
       // 更改图标路径
-      newHomeIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/home.png")';
-      newCloseIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/close.png")';
-      newSkinIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/skin.png")';
-      newInfoIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/info.png")';
-      newNightIconPath = 'url("https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/icon/0/night.png")';
+      newHomeIconPath = 'url("'+GitUrl+'/icon/0/home.png")';
+      newCloseIconPath = 'url("'+GitUrl+'/icon/0/close.png")';
+      newSkinIconPath = 'url("'+GitUrl+'/icon/0/skin.png")';
+      newInfoIconPath = 'url("'+GitUrl+'/icon/0/info.png")';
+      newNightIconPath = 'url("'+GitUrl+'/icon/0/night.png")';
 
       applyIconStyles();
     }
@@ -423,7 +423,7 @@ function getChat() {
       
       $.ajax({
         //url: "https://v.api.aa1.cn/api/api-xiaoai/talk.php",      //小爱接口
-        url: "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/liaotian.php",                               //青云课免费接口
+        url: GitUrl+"/liaotian.php",                               //青云课免费接口
         type: "GET",
         data: {
           msg: msg,
@@ -459,7 +459,7 @@ function getChat() {
             },
             error: function(err) {
                 // 播放备用音频文件
-                       var fallbackAudio = new Audio("./live2d/Audio/下雨的时候….mp3");
+                       var fallbackAudio = new Audio(GitUrl+"/live2d/Audio/下雨的时候….mp3");
                        fallbackAudio.play();
               $(".pio-dialog").text("哎呀，好像出现什么问题了呢，主人等下再试试吧！");
             }
