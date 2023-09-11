@@ -5,7 +5,11 @@
 # Last Update: 2023.9.10
 
 ---- */
-if(window.innerWidth >= 770){
+
+//全局链接，若本地部署，这里则填写你的地址
+window.GitUrl = "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d@main";
+
+if(window.innerWidth >= 770){       //判断pc端加载
     
       var top_url='${ctxsta}';
     (function() {
@@ -21,7 +25,7 @@ if(window.innerWidth >= 770){
             head.appendChild(link);
         }
         var cssFiles = [
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio.css",
+            GitUrl+"/pio.css",
         ];
         var cssTags = new Array(cssFiles.length);
         for (var k = 0, len = cssTags.length; k < len; k++) {
@@ -36,14 +40,14 @@ if(window.innerWidth >= 770){
         }
  
         var jsFiles = [
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/jquery364.min.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/TweenLite.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/live2dcubismcore.min.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pixi.min.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/cubism4.min.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/pio_sdk4.js",
-            "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/load.js",
+            GitUrl+"/jquery364.min.js",
+            GitUrl+"/TweenLite.js",
+            GitUrl+"/live2dcubismcore.min.js",
+            GitUrl+"/pixi.min.js",
+            GitUrl+"/cubism4.min.js",
+            GitUrl+"/pio.js",
+            GitUrl+"/pio_sdk4.js",
+            GitUrl+"/load.js",
         ];
         var scriptTags = new Array(jsFiles.length);
         for (var i = 0, len = jsFiles.length; i < len; i++) {
