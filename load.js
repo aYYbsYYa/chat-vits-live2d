@@ -9,9 +9,12 @@
 # Last Update: 2023.9.10
 
 ---- */
+
+//版权说明，请勿更改，尊重开源！！！
 console.log('\n' + ' %c Chat-Vits-Live2d   %c https://ayya.top ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
-
+//全局链接，若本地部署，这里则填写你的地址
+window.GitUrl = "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d@main";
 
 var 引流 = [
   "https://space.bilibili.com/542156438",
@@ -35,11 +38,11 @@ const initConfig = {
   },
   night: "toggleNightMode()",
   model: [
-    "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/Modle/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
-    "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/Modle/Xiao/xiao.model3.json",             //B站：动力薄荷
+    GitUrl+"/Modle/Hutao/hutao.model3.json",           //B站：根瘤菌rkzj
+    GitUrl+"/Modle/Xiao/xiao.model3.json",             //B站：动力薄荷
     
-    "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/Modle/Diana/Diana.model3.json",
-    "https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d/Modle/Ava/Ava.model3.json",
+    GitUrl+"/Modle/Diana/Diana.model3.json",
+    GitUrl+"/Modle/Ava/Ava.model3.json",
 	
   ],
   tips: true,
