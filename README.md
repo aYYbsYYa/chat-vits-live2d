@@ -10,9 +10,8 @@
 
 <script src="https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d@main/Loading.js" type="text/javascript"></script>
 
+引用上面的，然后下载这个phpAPI文件，放在网站的根目录就行了，聊天了
 
 https://cdn.jsdelivr.net/gh/aYYbsYYa/chat-vits-live2d@main/liaotian.php
-
-引用上面的，然后下载这个，放在网站的根目录就行了，聊天了
 
 胡桃、魈模型都经过作者授权了
