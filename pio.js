@@ -442,12 +442,18 @@ function getChat() {
               
               var backupUrl = '127.0.0.1/';      //支持添加vits备用接口  这里填写备用接口的api
 
-              vits.addEventListener('error', function() {
-                 // 备用接口
-                 vits.setAttribute('src', backupUrl);
-                 vits.load();
-                 vits.play();
-              });
+              vits.addEventListener('error', function () {
+	            // 移除错误事件处理程序，避免无限循环
+	            vits.removeEventListener('error', arguments.callee);
+	            
+	            // 备用接口
+	            vits.setAttribute('src', backupUrl);
+	            vits.load();
+	            setTimeout(function () {
+	                // 给服务器一些时间来响应
+	                vits.play();
+	            }, 1000); // 增加1秒的延迟
+	        });
 
               vits.setAttribute('src', primaryUrl);
               vits.load();
