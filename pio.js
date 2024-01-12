@@ -440,7 +440,7 @@ function getChat() {
               
               var primaryUrl = 'https://genshinvoice.top/api?speaker=' + Online_vitsId + '&text=' + res + '&format=wav&length=1&noise=0.5&noisew=0.9&sdp_ratio=0.2';
               
-              var backupUrl = '/';      //支持添加vits备用接口  这里填写备用接口的api
+              var backupUrl = '127.0.0.1/';      //支持添加vits备用接口  这里填写备用接口的api
 
               vits.addEventListener('error', function() {
                  // 备用接口
